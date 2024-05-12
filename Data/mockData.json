@@ -1,0 +1,100 @@
+{
+    "DraftNo": "a6c1e997-8835-48fc-bd02-e6c1d52e0190",
+    "DraftType": 2,
+    "HeadTitle": "人氣嚴選旅",
+    "Limit": 10,
+    "TagData": [
+        {
+            "TagNo": "eb6942a7-0b32-4c35-9e5f-44e37f0c9df7",
+            "TagTitle": "右下主題",
+            "TagSort": 2
+        },
+        {
+            "TagNo": "54884056-6d4e-4322-905e-c97d8ab6cd82",
+            "TagTitle": "輪播主題",
+            "TagSort": 1
+        }
+    ],
+    "DraftData": [
+        {
+            "DraftInfoNo": "e3e736d5-5877-4be3-b713-389ed299828d",
+            "TagNo": "54884056-6d4e-4322-905e-c97d8ab6cd82",
+            "DraftTitle": "秘境重啟基隆嶼",
+            "DraftSubTitle": "秘境重啟基隆嶼",
+            "Content": "",
+            "ProductTag": "",
+            "Price": "0",
+            "DraftPic": "https://www.liontravel.com/ConsoleAPData/PublicationStatic/_App/HomePage/KEELUNG.jpg",
+            "OnlineDateTime": "2023-02-15T00:00:00",
+            "OfflineDateTime": "2023-05-31T23:59:59",
+            "DraftURL": "https://travel.liontravel.com/search?DepartureID=&ArriveID=&GoDateStart=2023-04-01&GoDateEnd=2023-09-30&Keywords=%E5%8C%97%E5%87%BA%E5%9F%BA%E9%9A%86%E5%B6%BC&KeywordsCity=&TravelType=1&IsSold=true&utm_source=lionapp&utm_medium=banner&utm_campaign=tour-keelungisland",
+            "TargetBlank": false,
+            "DraftSort": 5,
+            "HighRecommend": false
+        },
+        {
+            "DraftInfoNo": "0a72cced-d75c-47b3-8f0c-06bc9f7388b2",
+            "TagNo": "54884056-6d4e-4322-905e-c97d8ab6cd82",
+            "DraftTitle": "2023雄獅夏季線",
+            "DraftSubTitle": "2023雄獅夏季線",
+            "Content": "",
+            "ProductTag": "",
+            "Price": "0",
+            "DraftPic": "https://www.liontravel.com/ConsoleAPData/PublicationStatic/_App/HomePage/雄獅線上旅展_優惠款_APP人氣嚴選.jpg",
+            "OnlineDateTime": "2023-04-25T00:00:00",
+            "OfflineDateTime": "2023-05-31T23:59:59",
+            "DraftURL": "https://www.liontravel.com/event/tte/?utm_source=lionapp&utm_medium=banner&utm_campaign=tte",
+            "TargetBlank": false,
+            "DraftSort": 1,
+            "HighRecommend": false
+        },
+        {
+            "DraftInfoNo": "78cbbe4c-fb49-4b05-bb60-ee6575fdfddd",
+            "TagNo": "54884056-6d4e-4322-905e-c97d8ab6cd82",
+            "DraftTitle": "全球樂園票券攻略 |",
+            "DraftSubTitle": "全球樂園票券攻略 |",
+            "Content": "",
+            "ProductTag": "",
+            "Price": "0",
+            "DraftPic": "https://www.liontravel.com/ConsoleAPData/PublicationStatic/_App/HomePage/全球樂園_APP人氣嚴選.jpg",
+            "OnlineDateTime": "2023-02-01T00:00:00",
+            "OfflineDateTime": "2023-05-31T23:59:59",
+            "DraftURL": "https://event.liontravel.com/zh-tw/amusementpark/home?utm_source=lionapp&utm_medium=banner&utm_campaign=hotel-flower",
+            "TargetBlank": false,
+            "DraftSort": 3,
+            "HighRecommend": false
+        },
+        {
+            "DraftInfoNo": "1cf82947-3c7f-4b27-9bc1-ff8316bf8d85",
+            "TagNo": "54884056-6d4e-4322-905e-c97d8ab6cd82",
+            "DraftTitle": "暑假預購",
+            "DraftSubTitle": "母親節票券優惠",
+            "Content": "",
+            "ProductTag": "",
+            "Price": "0",
+            "DraftPic": "https://www.liontravel.com/ConsoleAPData/PublicationStatic/_App/HomePage/2023_好想放暑假 (1).jpg",
+            "OnlineDateTime": "2023-05-01T00:00:00",
+            "OfflineDateTime": "2023-06-15T23:59:59",
+            "DraftURL": "https://event.liontravel.com/zh-tw/holidays/summervacation/index?utm_source=lionapp&utm_medium=banner&utm_campaign=summervacation",
+            "TargetBlank": false,
+            "DraftSort": 2,
+            "HighRecommend": false
+        },
+        {
+            "DraftInfoNo": "8e267d93-4591-4d9f-9146-02674db5c215",
+            "TagNo": "54884056-6d4e-4322-905e-c97d8ab6cd82",
+            "DraftTitle": "2023熱氣球嘉年華",
+            "DraftSubTitle": "2023熱氣球嘉年華",
+            "Content": "",
+            "ProductTag": "",
+            "Price": "0",
+            "DraftPic": "https://www.liontravel.com/ConsoleAPData/PublicationStatic/_App/HomePage/環島BN│2023熱氣球_APP人氣嚴選旅_981x600.jpg",
+            "OnlineDateTime": "2023-02-01T00:00:00",
+            "OfflineDateTime": "2023-08-28T23:59:59",
+            "DraftURL": "https://event.liontravel.com/zh-tw/festival/taiwanballoonfestival/tour?utm_source=lionapp&utm_medium=banner&utm_campaign=festival-taitung",
+            "TargetBlank": false,
+            "DraftSort": 7,
+            "HighRecommend": false
+        }
+    ]
+}
