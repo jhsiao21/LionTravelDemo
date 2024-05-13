@@ -15,6 +15,7 @@ class TravelAtTimeTableViewCell: UITableViewCell {
     
 //    private let travelAtTimeHeaderView = TravelAtTimeHeaderView()
     private let buttonMenuView = LTButtonMenuView()
+    private let anchorMenuView = LTAnchorMenuView()
     
     var collectionViewFlowLayout = UICollectionViewFlowLayout()
         
@@ -53,7 +54,9 @@ class TravelAtTimeTableViewCell: UITableViewCell {
 //        travelAtTimeHeaderView.translatesAutoresizingMaskIntoConstraints = false
 //        travelAtTimeHeaderView.linkedBtnTappedDelegate = self
         
-        setupButtonMenu()
+//        setupButtonMenu()
+        setupAnchorMenuView()
+        
     }
     
     private func setupButtonMenu() {
@@ -82,6 +85,14 @@ class TravelAtTimeTableViewCell: UITableViewCell {
         buttonMenuView.buttonMenuDelegate = self
     }
     
+    private func setupAnchorMenuView() {
+        
+        anchorMenuView.translatesAutoresizingMaskIntoConstraints = false
+        anchorMenuView.dataSource = self
+        anchorMenuView.delegate = self
+//        anchorMenuView.defaultSelectedIndex = 0
+    }
+    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -93,17 +104,23 @@ class TravelAtTimeTableViewCell: UITableViewCell {
     }
     
     private func layout() {
-        contentView.addSubview(buttonMenuView)
+//        contentView.addSubview(buttonMenuView)
+        contentView.addSubview(anchorMenuView)
         contentView.addSubview(collectionView)
         contentView.addSubview(pageControl)
         
         NSLayoutConstraint.activate([
-            buttonMenuView.topAnchor.constraint(equalToSystemSpacingBelow: contentView.topAnchor, multiplier: 2),
-            buttonMenuView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 0),
-            buttonMenuView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: 0),
-            buttonMenuView.heightAnchor.constraint(equalToConstant: 35), //跟travelAtTimeHeaderView內的按鈕高度一樣
+//            buttonMenuView.topAnchor.constraint(equalToSystemSpacingBelow: contentView.topAnchor, multiplier: 2),
+//            buttonMenuView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 0),
+//            buttonMenuView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: 0),
+//            buttonMenuView.heightAnchor.constraint(equalToConstant: 35), //跟travelAtTimeHeaderView內的按鈕高度一樣
             
-            collectionView.topAnchor.constraint(equalToSystemSpacingBelow: buttonMenuView.bottomAnchor, multiplier: 1),
+            anchorMenuView.topAnchor.constraint(equalToSystemSpacingBelow: contentView.topAnchor, multiplier: 2),
+            anchorMenuView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 0),
+            anchorMenuView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: 0),
+            anchorMenuView.heightAnchor.constraint(equalToConstant: 35), //跟travelAtTimeHeaderView內的按鈕高度一樣
+            
+            collectionView.topAnchor.constraint(equalToSystemSpacingBelow: anchorMenuView.bottomAnchor, multiplier: 1),
             collectionView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 0),
             collectionView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: 0),
             collectionView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: 0),
@@ -189,6 +206,8 @@ extension TravelAtTimeTableViewCell: UIScrollViewDelegate {
         let visibleIdexPath = Int(round(scrollView.contentOffset.x / scrollView.bounds.width))
         pageControl.currentPage = visibleIdexPath
         buttonMenuView.scrollToButton(btnIdx: visibleIdexPath)
+        
+        anchorMenuView.scrollToButton(btnIdx: visibleIdexPath)
     }
 }
 
@@ -200,6 +219,31 @@ extension TravelAtTimeTableViewCell: ButtonMenuDelegate {
             pageControl.currentPage = travelType.rawValue
         }
     }
-    
-    
 }
+
+extension TravelAtTimeTableViewCell: AnchorMenuDataSource {
+    
+    func numberOfButtonsToShow() -> Int {
+        return TravelAtTimeType.allCases.count
+    }
+    
+    func button(at index: Int) -> UIButton? {
+        // 這裏可以使用createButton實作按鈕標題、樣式
+        let title = MockData.titles[index]
+        let button = anchorMenuView.createButton(withTitle: title, fontSize: 14)
+        
+        return button
+    }
+}
+
+extension TravelAtTimeTableViewCell: AnchorMenuDelegate {
+    func button(didSelect view: UIButton, at index: Int) {
+        print("current button index:\(index)")
+        if let travelType = TravelAtTimeType(rawValue: index) {
+            scrollToItem(travelType)
+            pageControl.currentPage = travelType.rawValue
+        }
+    }
+}
+
+

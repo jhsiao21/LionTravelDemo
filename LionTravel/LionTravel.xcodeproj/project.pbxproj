@@ -36,6 +36,10 @@
 		02BA13762BBEE4AA00F86EE2 /* AdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BA13752BBEE4AA00F86EE2 /* AdViewController.swift */; };
 		02BA13782BBFD29500F86EE2 /* TravelDetailPreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BA13772BBFD29500F86EE2 /* TravelDetailPreviewViewController.swift */; };
 		02BA137A2BBFD8E100F86EE2 /* AdContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BA13792BBFD8E100F86EE2 /* AdContent.swift */; };
+		58538AE62BF1B305002CDE4D /* LTAnchorMenuProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58538AE52BF1B305002CDE4D /* LTAnchorMenuProtocol.swift */; };
+		58538AE82BF1B8CA002CDE4D /* LTAnchorMenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58538AE72BF1B8CA002CDE4D /* LTAnchorMenuView.xib */; };
+		58538AEA2BF1B905002CDE4D /* LTAnchorMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58538AE92BF1B905002CDE4D /* LTAnchorMenuView.swift */; };
+		58538AEC2BF1E256002CDE4D /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58538AEB2BF1E256002CDE4D /* MockData.swift */; };
 		58CED0A92BEB532E00FBF902 /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BA136C2BBD90CC00F86EE2 /* DataLoader.swift */; };
 		58CED0AA2BEB532E00FBF902 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02AEE3722BB54823001EA27C /* HomeViewController.swift */; };
 		58CED0AB2BEB532E00FBF902 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02AEE3772BB55925001EA27C /* SearchViewController.swift */; };
@@ -104,6 +108,10 @@
 		02BA13752BBEE4AA00F86EE2 /* AdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdViewController.swift; sourceTree = "<group>"; };
 		02BA13772BBFD29500F86EE2 /* TravelDetailPreviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TravelDetailPreviewViewController.swift; sourceTree = "<group>"; };
 		02BA13792BBFD8E100F86EE2 /* AdContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdContent.swift; sourceTree = "<group>"; };
+		58538AE52BF1B305002CDE4D /* LTAnchorMenuProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTAnchorMenuProtocol.swift; sourceTree = "<group>"; };
+		58538AE72BF1B8CA002CDE4D /* LTAnchorMenuView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LTAnchorMenuView.xib; sourceTree = "<group>"; };
+		58538AE92BF1B905002CDE4D /* LTAnchorMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTAnchorMenuView.swift; sourceTree = "<group>"; };
+		58538AEB2BF1E256002CDE4D /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
 		58CED0CB2BEB532E00FBF902 /* LionTravel Dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LionTravel Dev.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		58CED1222BECCCA600FBF902 /* LTGroupTravelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTGroupTravelViewController.swift; sourceTree = "<group>"; };
 		58CED1232BECCCA600FBF902 /* LTGroupTravelViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LTGroupTravelViewController.xib; sourceTree = "<group>"; };
@@ -262,6 +270,26 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		58538AE32BF1B25A002CDE4D /* LTButtonMenuView */ = {
+			isa = PBXGroup;
+			children = (
+				58CED1482BEDFE4600FBF902 /* Model */,
+				58CED1472BEDFE3800FBF902 /* View */,
+			);
+			path = LTButtonMenuView;
+			sourceTree = "<group>";
+		};
+		58538AE42BF1B275002CDE4D /* LTAnchorMenuView */ = {
+			isa = PBXGroup;
+			children = (
+				58538AE52BF1B305002CDE4D /* LTAnchorMenuProtocol.swift */,
+				58538AE72BF1B8CA002CDE4D /* LTAnchorMenuView.xib */,
+				58538AE92BF1B905002CDE4D /* LTAnchorMenuView.swift */,
+				58538AEB2BF1E256002CDE4D /* MockData.swift */,
+			);
+			path = LTAnchorMenuView;
+			sourceTree = "<group>";
+		};
 		58CED1202BECCBA100FBF902 /* Group */ = {
 			isa = PBXGroup;
 			children = (
@@ -284,8 +312,8 @@
 		58CED12A2BEDD37300FBF902 /* Component */ = {
 			isa = PBXGroup;
 			children = (
-				58CED1482BEDFE4600FBF902 /* Model */,
-				58CED1472BEDFE3800FBF902 /* View */,
+				58538AE42BF1B275002CDE4D /* LTAnchorMenuView */,
+				58538AE32BF1B25A002CDE4D /* LTButtonMenuView */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -395,6 +423,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58538AE82BF1B8CA002CDE4D /* LTAnchorMenuView.xib in Resources */,
 				02AEE3652BB54635001EA27C /* LaunchScreen.storyboard in Resources */,
 				58CED1292BEDCE9500FBF902 /* TableViewCell.xib in Resources */,
 				58CED1442BEDEF7100FBF902 /* LTButtonMenuView.xib in Resources */,
@@ -435,11 +464,14 @@
 				02B668CB2BB7E98400E06AC4 /* HomeViewModel.swift in Sources */,
 				02B668D02BB7F8E900E06AC4 /* CollectionViewType.swift in Sources */,
 				024E241F2BB7BD6D00B94A8A /* APIClient.swift in Sources */,
+				58538AEA2BF1B905002CDE4D /* LTAnchorMenuView.swift in Sources */,
 				02AEE36F2BB547C8001EA27C /* MainTabBarViewController.swift in Sources */,
 				02B668D42BB80D7B00E06AC4 /* CollectionViewCell.swift in Sources */,
 				0268A1752BB96C3700C6A521 /* TravelAtTimeTableViewCell.swift in Sources */,
+				58538AE62BF1B305002CDE4D /* LTAnchorMenuProtocol.swift in Sources */,
 				02AEE3592BB54634001EA27C /* AppDelegate.swift in Sources */,
 				02B668C72BB7C7B400E06AC4 /* UIImage+Ext.swift in Sources */,
+				58538AEC2BF1E256002CDE4D /* MockData.swift in Sources */,
 				02BA13782BBFD29500F86EE2 /* TravelDetailPreviewViewController.swift in Sources */,
 				02BA137A2BBFD8E100F86EE2 /* AdContent.swift in Sources */,
 				58CED1242BECCCA600FBF902 /* LTGroupTravelViewController.swift in Sources */,

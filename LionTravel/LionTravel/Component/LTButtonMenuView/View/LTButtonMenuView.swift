@@ -173,13 +173,6 @@ class LTButtonMenuView: UIView {
         return titleSize.width + 20
     }
     
-    /// 计算给定 NSAttributedString 的宽度
-    func widthForButtonAttributedTitle(_ attributedTitle: NSAttributedString) -> CGFloat {
-        let titleSize = attributedTitle.size()
-        // 添加适当的内边距
-        return titleSize.width + 20
-    }
-    
     private func layoutButtons() {
         var previousButton: UIButton?
         for button in buttons {
@@ -213,6 +206,8 @@ class LTButtonMenuView: UIView {
             
             // 更新 previousButton 以便下一个循环使用
             previousButton = button
+            
+//            print("btnFrame:\(button.frame.origin)")
         }
         
         // 为滚动视图的内容设置适当的结束约束

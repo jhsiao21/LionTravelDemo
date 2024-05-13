@@ -7,80 +7,64 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "C10CD0FA-B45C-4DE8-9386-B3F3E2161E0A"
+            uuid = "5CC6617D-CCD4-4687-9B2B-068A80B45063"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "LionTravel/Component/View/LTButtonMenuView.swift"
+            filePath = "LionTravel/Home/View/TravelAtTimeTableViewCell.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "88"
-            endingLineNumber = "88"
-            landmarkName = "setupButtons()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "C10CD0FA-B45C-4DE8-9386-B3F3E2161E0A - 6f6d9dd7f46c735c"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "LionTravel.LTButtonMenuView.setupButtons() -&gt; ()"
-                  moduleName = "LionTravel"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/lionuser/Documents/LionTravelDemo/LionTravel/LionTravel/Component/View/LTButtonMenuView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "72"
-                  endingLineNumber = "72"
-                  offsetFromSymbolStart = "128">
-               </Location>
-               <Location
-                  uuid = "C10CD0FA-B45C-4DE8-9386-B3F3E2161E0A - 307cfb805b8013bf"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (__C.UIButton) -&gt; () in LionTravel.LTButtonMenuView.setupButtons() -&gt; ()"
-                  moduleName = "LionTravel"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/lionuser/Documents/LionTravelDemo/LionTravel/LionTravel/Component/View/LTButtonMenuView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "72"
-                  endingLineNumber = "72"
-                  offsetFromSymbolStart = "32">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "B4D83323-1B36-4398-B6BD-CE21C05E4D20"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "LionTravel/SettingViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
-            landmarkName = "viewDidLoad()"
+            startingLineNumber = "89"
+            endingLineNumber = "89"
+            landmarkName = "setupAnchorMenuView()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "8710B7F8-9D9E-4AC0-90B9-1D6C1A5048A0"
+            uuid = "E4000536-64F9-4788-AB3C-7344F1A619EE"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "LionTravel/Component/View/LTButtonMenuView.swift"
+            filePath = "LionTravel/Home/View/TravelAtTimeTableViewCell.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "61"
-            endingLineNumber = "61"
-            landmarkName = "Initialize()"
+            startingLineNumber = "93"
+            endingLineNumber = "93"
+            landmarkName = "setupAnchorMenuView()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AC06E07A-1DC4-4339-99DC-F781AF03AE24"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LionTravel/Component/LTAnchorMenuView/LTAnchorMenuView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "190"
+            endingLineNumber = "190"
+            landmarkName = "btnTapped(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C2F693F3-4C20-4C00-AFB3-BFE2761F1FE7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LionTravel/Component/LTAnchorMenuView/LTAnchorMenuView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "200"
+            endingLineNumber = "200"
+            landmarkName = "btnTapped(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
