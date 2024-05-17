@@ -23,15 +23,20 @@ class MainTabBarViewController: UITabBarController {
         
         let SettingVC = UINavigationController(rootViewController: SettingViewController())
         
+        let testVC = UINavigationController(rootViewController: TestBViewController())
+        
         HomeVC.tabBarItem.title = "Home"
         HomeVC.tabBarItem.image = UIImage(systemName: "house")
         
         SettingVC.tabBarItem.title = "Setting"
         SettingVC.tabBarItem.image = UIImage(systemName: "person")
         
+        testVC.tabBarItem.title = "Test"
+        testVC.tabBarItem.image = UIImage(systemName: "t.square")
+        
         tabBar.tintColor = .systemPink
         tabBar.isTranslucent = false
         tabBar.shadowImage = UIImage()
-        setViewControllers([HomeVC, SettingVC], animated: true)
+        setViewControllers([HomeVC, SettingVC, testVC], animated: true)
     }
 }

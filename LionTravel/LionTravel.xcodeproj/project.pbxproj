@@ -36,10 +36,21 @@
 		02BA13762BBEE4AA00F86EE2 /* AdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BA13752BBEE4AA00F86EE2 /* AdViewController.swift */; };
 		02BA13782BBFD29500F86EE2 /* TravelDetailPreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BA13772BBFD29500F86EE2 /* TravelDetailPreviewViewController.swift */; };
 		02BA137A2BBFD8E100F86EE2 /* AdContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BA13792BBFD8E100F86EE2 /* AdContent.swift */; };
-		58538AE62BF1B305002CDE4D /* LTAnchorMenuProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58538AE52BF1B305002CDE4D /* LTAnchorMenuProtocol.swift */; };
-		58538AE82BF1B8CA002CDE4D /* LTAnchorMenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58538AE72BF1B8CA002CDE4D /* LTAnchorMenuView.xib */; };
-		58538AEA2BF1B905002CDE4D /* LTAnchorMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58538AE92BF1B905002CDE4D /* LTAnchorMenuView.swift */; };
+		58538AE62BF1B305002CDE4D /* AnchorMenuProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58538AE52BF1B305002CDE4D /* AnchorMenuProtocol.swift */; };
+		58538AE82BF1B8CA002CDE4D /* AnchorMenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58538AE72BF1B8CA002CDE4D /* AnchorMenuView.xib */; };
+		58538AEA2BF1B905002CDE4D /* AnchorMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58538AE92BF1B905002CDE4D /* AnchorMenuView.swift */; };
 		58538AEC2BF1E256002CDE4D /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58538AEB2BF1E256002CDE4D /* MockData.swift */; };
+		58538AF32BF33684002CDE4D /* SettingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58538AF22BF33684002CDE4D /* SettingViewModel.swift */; };
+		58538AF92BF35BF7002CDE4D /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58538AF72BF35BF7002CDE4D /* TestViewController.swift */; };
+		58538AFA2BF35BF7002CDE4D /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58538AF82BF35BF7002CDE4D /* TestViewController.xib */; };
+		58538AFD2BF369CA002CDE4D /* LTAnchorMenuCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58538AFC2BF369CA002CDE4D /* LTAnchorMenuCollectionView.swift */; };
+		58538AFF2BF369DA002CDE4D /* LTAnchorMenuCollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58538AFE2BF369DA002CDE4D /* LTAnchorMenuCollectionView.xib */; };
+		58538B072BF48C49002CDE4D /* LTAnchorMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58538B042BF48C49002CDE4D /* LTAnchorMenuView.swift */; };
+		58538B082BF48C49002CDE4D /* LTAnchorMenuProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58538B052BF48C49002CDE4D /* LTAnchorMenuProtocol.swift */; };
+		58538B092BF48C49002CDE4D /* LTAnchorMenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58538B062BF48C49002CDE4D /* LTAnchorMenuView.xib */; };
+		58538B0B2BF49640002CDE4D /* LTAnchorMenuCollectionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58538B0A2BF49640002CDE4D /* LTAnchorMenuCollectionProtocol.swift */; };
+		58538B0E2BF4A29D002CDE4D /* TestBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58538B0C2BF4A29D002CDE4D /* TestBViewController.swift */; };
+		58538B0F2BF4A29D002CDE4D /* TestBViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58538B0D2BF4A29D002CDE4D /* TestBViewController.xib */; };
 		58CED0A92BEB532E00FBF902 /* DataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02BA136C2BBD90CC00F86EE2 /* DataLoader.swift */; };
 		58CED0AA2BEB532E00FBF902 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02AEE3722BB54823001EA27C /* HomeViewController.swift */; };
 		58CED0AB2BEB532E00FBF902 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02AEE3772BB55925001EA27C /* SearchViewController.swift */; };
@@ -75,7 +86,6 @@
 		58CED1292BEDCE9500FBF902 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58CED1272BEDCE9500FBF902 /* TableViewCell.xib */; };
 		58CED1442BEDEF7100FBF902 /* LTButtonMenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58CED1432BEDEF7100FBF902 /* LTButtonMenuView.xib */; };
 		58CED1462BEDEF9200FBF902 /* LTButtonMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58CED1452BEDEF9200FBF902 /* LTButtonMenuView.swift */; };
-		58CED14A2BEDFE5B00FBF902 /* LTButtonMenuEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58CED1492BEDFE5B00FBF902 /* LTButtonMenuEnum.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -108,10 +118,21 @@
 		02BA13752BBEE4AA00F86EE2 /* AdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdViewController.swift; sourceTree = "<group>"; };
 		02BA13772BBFD29500F86EE2 /* TravelDetailPreviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TravelDetailPreviewViewController.swift; sourceTree = "<group>"; };
 		02BA13792BBFD8E100F86EE2 /* AdContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdContent.swift; sourceTree = "<group>"; };
-		58538AE52BF1B305002CDE4D /* LTAnchorMenuProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTAnchorMenuProtocol.swift; sourceTree = "<group>"; };
-		58538AE72BF1B8CA002CDE4D /* LTAnchorMenuView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LTAnchorMenuView.xib; sourceTree = "<group>"; };
-		58538AE92BF1B905002CDE4D /* LTAnchorMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTAnchorMenuView.swift; sourceTree = "<group>"; };
+		58538AE52BF1B305002CDE4D /* AnchorMenuProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnchorMenuProtocol.swift; sourceTree = "<group>"; };
+		58538AE72BF1B8CA002CDE4D /* AnchorMenuView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnchorMenuView.xib; sourceTree = "<group>"; };
+		58538AE92BF1B905002CDE4D /* AnchorMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnchorMenuView.swift; sourceTree = "<group>"; };
 		58538AEB2BF1E256002CDE4D /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
+		58538AF22BF33684002CDE4D /* SettingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewModel.swift; sourceTree = "<group>"; };
+		58538AF72BF35BF7002CDE4D /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		58538AF82BF35BF7002CDE4D /* TestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
+		58538AFC2BF369CA002CDE4D /* LTAnchorMenuCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTAnchorMenuCollectionView.swift; sourceTree = "<group>"; };
+		58538AFE2BF369DA002CDE4D /* LTAnchorMenuCollectionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LTAnchorMenuCollectionView.xib; sourceTree = "<group>"; };
+		58538B042BF48C49002CDE4D /* LTAnchorMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTAnchorMenuView.swift; sourceTree = "<group>"; };
+		58538B052BF48C49002CDE4D /* LTAnchorMenuProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTAnchorMenuProtocol.swift; sourceTree = "<group>"; };
+		58538B062BF48C49002CDE4D /* LTAnchorMenuView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LTAnchorMenuView.xib; sourceTree = "<group>"; };
+		58538B0A2BF49640002CDE4D /* LTAnchorMenuCollectionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTAnchorMenuCollectionProtocol.swift; sourceTree = "<group>"; };
+		58538B0C2BF4A29D002CDE4D /* TestBViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestBViewController.swift; sourceTree = "<group>"; };
+		58538B0D2BF4A29D002CDE4D /* TestBViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestBViewController.xib; sourceTree = "<group>"; };
 		58CED0CB2BEB532E00FBF902 /* LionTravel Dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LionTravel Dev.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		58CED1222BECCCA600FBF902 /* LTGroupTravelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTGroupTravelViewController.swift; sourceTree = "<group>"; };
 		58CED1232BECCCA600FBF902 /* LTGroupTravelViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LTGroupTravelViewController.xib; sourceTree = "<group>"; };
@@ -119,7 +140,6 @@
 		58CED1272BEDCE9500FBF902 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		58CED1432BEDEF7100FBF902 /* LTButtonMenuView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LTButtonMenuView.xib; sourceTree = "<group>"; };
 		58CED1452BEDEF9200FBF902 /* LTButtonMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTButtonMenuView.swift; sourceTree = "<group>"; };
-		58CED1492BEDFE5B00FBF902 /* LTButtonMenuEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTButtonMenuEnum.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +184,7 @@
 		02AEE3572BB54634001EA27C /* LionTravel */ = {
 			isa = PBXGroup;
 			children = (
+				58538AEF2BF33637002CDE4D /* Setting */,
 				58CED12A2BEDD37300FBF902 /* Component */,
 				02BA13642BBD857700F86EE2 /* Service */,
 				02B668C52BB7C7A400E06AC4 /* Extensions */,
@@ -173,7 +194,6 @@
 				02AEE35A2BB54634001EA27C /* SceneDelegate.swift */,
 				02AEE35C2BB54634001EA27C /* ViewController.swift */,
 				02AEE35E2BB54634001EA27C /* Main.storyboard */,
-				02AEE3742BB54A5D001EA27C /* SettingViewController.swift */,
 				02AEE36C2BB547C8001EA27C /* TabBar */,
 				02AEE3612BB54635001EA27C /* Assets.xcassets */,
 				02AEE3632BB54635001EA27C /* LaunchScreen.storyboard */,
@@ -273,7 +293,6 @@
 		58538AE32BF1B25A002CDE4D /* LTButtonMenuView */ = {
 			isa = PBXGroup;
 			children = (
-				58CED1482BEDFE4600FBF902 /* Model */,
 				58CED1472BEDFE3800FBF902 /* View */,
 			);
 			path = LTButtonMenuView;
@@ -282,12 +301,53 @@
 		58538AE42BF1B275002CDE4D /* LTAnchorMenuView */ = {
 			isa = PBXGroup;
 			children = (
-				58538AE52BF1B305002CDE4D /* LTAnchorMenuProtocol.swift */,
-				58538AE72BF1B8CA002CDE4D /* LTAnchorMenuView.xib */,
-				58538AE92BF1B905002CDE4D /* LTAnchorMenuView.swift */,
-				58538AEB2BF1E256002CDE4D /* MockData.swift */,
+				58538AE52BF1B305002CDE4D /* AnchorMenuProtocol.swift */,
+				58538AE72BF1B8CA002CDE4D /* AnchorMenuView.xib */,
+				58538AE92BF1B905002CDE4D /* AnchorMenuView.swift */,
 			);
 			path = LTAnchorMenuView;
+			sourceTree = "<group>";
+		};
+		58538AEF2BF33637002CDE4D /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				58538AF12BF33658002CDE4D /* ViewModel */,
+				58538AF02BF33651002CDE4D /* View */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		58538AF02BF33651002CDE4D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				02AEE3742BB54A5D001EA27C /* SettingViewController.swift */,
+				58538AF72BF35BF7002CDE4D /* TestViewController.swift */,
+				58538AF82BF35BF7002CDE4D /* TestViewController.xib */,
+				58538B0C2BF4A29D002CDE4D /* TestBViewController.swift */,
+				58538B0D2BF4A29D002CDE4D /* TestBViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		58538AF12BF33658002CDE4D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				58538AF22BF33684002CDE4D /* SettingViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		58538AFB2BF368CC002CDE4D /* LTAnchorMenuCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				58538B052BF48C49002CDE4D /* LTAnchorMenuProtocol.swift */,
+				58538B062BF48C49002CDE4D /* LTAnchorMenuView.xib */,
+				58538B042BF48C49002CDE4D /* LTAnchorMenuView.swift */,
+				58538B0A2BF49640002CDE4D /* LTAnchorMenuCollectionProtocol.swift */,
+				58538AFE2BF369DA002CDE4D /* LTAnchorMenuCollectionView.xib */,
+				58538AFC2BF369CA002CDE4D /* LTAnchorMenuCollectionView.swift */,
+			);
+			path = LTAnchorMenuCollectionView;
 			sourceTree = "<group>";
 		};
 		58CED1202BECCBA100FBF902 /* Group */ = {
@@ -312,6 +372,8 @@
 		58CED12A2BEDD37300FBF902 /* Component */ = {
 			isa = PBXGroup;
 			children = (
+				58538AFB2BF368CC002CDE4D /* LTAnchorMenuCollectionView */,
+				58538AEB2BF1E256002CDE4D /* MockData.swift */,
 				58538AE42BF1B275002CDE4D /* LTAnchorMenuView */,
 				58538AE32BF1B25A002CDE4D /* LTButtonMenuView */,
 			);
@@ -325,14 +387,6 @@
 				58CED1452BEDEF9200FBF902 /* LTButtonMenuView.swift */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		58CED1482BEDFE4600FBF902 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				58CED1492BEDFE5B00FBF902 /* LTButtonMenuEnum.swift */,
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -423,12 +477,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				58538AE82BF1B8CA002CDE4D /* LTAnchorMenuView.xib in Resources */,
+				58538AE82BF1B8CA002CDE4D /* AnchorMenuView.xib in Resources */,
 				02AEE3652BB54635001EA27C /* LaunchScreen.storyboard in Resources */,
+				58538B092BF48C49002CDE4D /* LTAnchorMenuView.xib in Resources */,
 				58CED1292BEDCE9500FBF902 /* TableViewCell.xib in Resources */,
 				58CED1442BEDEF7100FBF902 /* LTButtonMenuView.xib in Resources */,
+				58538AFF2BF369DA002CDE4D /* LTAnchorMenuCollectionView.xib in Resources */,
+				58538AFA2BF35BF7002CDE4D /* TestViewController.xib in Resources */,
 				02BA136F2BBD91D000F86EE2 /* mockData.json in Resources */,
 				02AEE3622BB54635001EA27C /* Assets.xcassets in Resources */,
+				58538B0F2BF4A29D002CDE4D /* TestBViewController.xib in Resources */,
 				58CED1252BECCCA600FBF902 /* LTGroupTravelViewController.xib in Resources */,
 				02AEE3602BB54634001EA27C /* Main.storyboard in Resources */,
 			);
@@ -453,6 +511,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				02BA136D2BBD90CC00F86EE2 /* DataLoader.swift in Sources */,
+				58538AF32BF33684002CDE4D /* SettingViewModel.swift in Sources */,
 				58CED1462BEDEF9200FBF902 /* LTButtonMenuView.swift in Sources */,
 				02AEE3732BB54823001EA27C /* HomeViewController.swift in Sources */,
 				02AEE3782BB55925001EA27C /* SearchViewController.swift in Sources */,
@@ -460,26 +519,31 @@
 				02BA13692BBD85D400F86EE2 /* LionTravel.swift in Sources */,
 				0268A17B2BB992C100C6A521 /* TravelAtTimeHeaderView.swift in Sources */,
 				02B668D22BB7FAFA00E06AC4 /* CollectionViewModels.swift in Sources */,
+				58538B0E2BF4A29D002CDE4D /* TestBViewController.swift in Sources */,
 				02AEE35D2BB54634001EA27C /* ViewController.swift in Sources */,
 				02B668CB2BB7E98400E06AC4 /* HomeViewModel.swift in Sources */,
 				02B668D02BB7F8E900E06AC4 /* CollectionViewType.swift in Sources */,
+				58538B072BF48C49002CDE4D /* LTAnchorMenuView.swift in Sources */,
 				024E241F2BB7BD6D00B94A8A /* APIClient.swift in Sources */,
-				58538AEA2BF1B905002CDE4D /* LTAnchorMenuView.swift in Sources */,
+				58538AEA2BF1B905002CDE4D /* AnchorMenuView.swift in Sources */,
 				02AEE36F2BB547C8001EA27C /* MainTabBarViewController.swift in Sources */,
 				02B668D42BB80D7B00E06AC4 /* CollectionViewCell.swift in Sources */,
+				58538AFD2BF369CA002CDE4D /* LTAnchorMenuCollectionView.swift in Sources */,
 				0268A1752BB96C3700C6A521 /* TravelAtTimeTableViewCell.swift in Sources */,
-				58538AE62BF1B305002CDE4D /* LTAnchorMenuProtocol.swift in Sources */,
+				58538AE62BF1B305002CDE4D /* AnchorMenuProtocol.swift in Sources */,
 				02AEE3592BB54634001EA27C /* AppDelegate.swift in Sources */,
 				02B668C72BB7C7B400E06AC4 /* UIImage+Ext.swift in Sources */,
 				58538AEC2BF1E256002CDE4D /* MockData.swift in Sources */,
+				58538B0B2BF49640002CDE4D /* LTAnchorMenuCollectionProtocol.swift in Sources */,
 				02BA13782BBFD29500F86EE2 /* TravelDetailPreviewViewController.swift in Sources */,
 				02BA137A2BBFD8E100F86EE2 /* AdContent.swift in Sources */,
+				58538B082BF48C49002CDE4D /* LTAnchorMenuProtocol.swift in Sources */,
+				58538AF92BF35BF7002CDE4D /* TestViewController.swift in Sources */,
 				58CED1242BECCCA600FBF902 /* LTGroupTravelViewController.swift in Sources */,
 				0268A1832BBA6AC700C6A521 /* UIColor+Ext.swift in Sources */,
 				58CED1282BEDCE9500FBF902 /* TableViewCell.swift in Sources */,
 				02AEE35B2BB54634001EA27C /* SceneDelegate.swift in Sources */,
 				02AEE3752BB54A5D001EA27C /* SettingViewController.swift in Sources */,
-				58CED14A2BEDFE5B00FBF902 /* LTButtonMenuEnum.swift in Sources */,
 				02BA13762BBEE4AA00F86EE2 /* AdViewController.swift in Sources */,
 				02BA13742BBEE07400F86EE2 /* TopSelectedTableViewCell.swift in Sources */,
 			);

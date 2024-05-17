@@ -13,10 +13,6 @@ protocol ButtonMenuDelegate: AnyObject {
 
 class LTButtonMenuView: UIView {
     
-    weak var buttonMenuDelegate: ButtonMenuDelegate?
-    
-    private var buttonFontSize: CGFloat = 14
-    
     var defaultSelectedIndex: Int = 0 {
         didSet {
             selectDefaultButton()
@@ -27,13 +23,14 @@ class LTButtonMenuView: UIView {
         didSet { scrollView?.isScrollEnabled = allowsScrolling }
     }
     
-    var showButtonShadow: Bool = false {
+    var showButtonShadow: Bool = true {
         didSet { updateButtonShadows() }
     }
     
     var numberOfButtons: Int = 5 {
         didSet {
             setupButtons()
+            updateButtonShadows()
             selectDefaultButton()
         }
     }
@@ -41,11 +38,17 @@ class LTButtonMenuView: UIView {
     var buttonTitles: [String] = [] {
         didSet {
             setupButtons()
+            updateButtonShadows()
             selectDefaultButton()
         }
     }
     
+    weak var delegate: ButtonMenuDelegate?
+    
     @IBOutlet var scrollView: UIScrollView!
+    
+    private var buttonFontSize: CGFloat = 14
+    
     private var buttons: [UIButton] = []
     
     override init(frame: CGRect) {
@@ -118,19 +121,10 @@ class LTButtonMenuView: UIView {
     ///   - title: 按钮的标题
     ///   - fontSize: 标题的字体大小
     /// - Returns: 配置好的 UIButton
-    func createButton(withTitle title: String, fontSize: CGFloat) -> UIButton {
+    func createButton(withTitle title: String, fontSize: CGFloat, shadowVisible: Bool = true) -> UIButton {
         let button = UIButton()
         
         button.backgroundColor = .white
-
-        // 這種設置方式字會變成...
-//        let titleAttributes: [NSAttributedString.Key: Any] = [
-//            .font: UIFont.systemFont(ofSize: fontSize, weight: .semibold),
-//            .underlineStyle: NSUnderlineStyle.Element().rawValue,
-//        ]
-//        
-//        let attributedTitle = NSAttributedString(string: title, attributes: titleAttributes)
-//        button.setAttributedTitle(attributedTitle, for: .normal)
         
         // 设置按钮的标题和颜色
         button.setTitle(title, for: .normal)
@@ -140,10 +134,19 @@ class LTButtonMenuView: UIView {
         // 设置标题字体
         button.titleLabel?.font = UIFont.systemFont(ofSize: fontSize)
         
+        // 設置shadow
+        if shadowVisible {
+            button.layer.shadowColor = UIColor.black.cgColor
+            button.layer.shadowOffset = CGSize(width: 2, height: 2)
+            button.layer.shadowRadius = 1
+            button.layer.shadowOpacity = 0.5
+        } else {
+            button.layer.shadowOpacity = 0
+        }
+        
         // 根据标题计算宽度
         let buttonWidth = widthForButtonTitle(title, font: button.titleLabel!.font)
-//        let buttonWidth = widthForButtonAttributedTitle(attributedTitle)
-
+        
         button.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
         
         // 设置按钮宽度约束
@@ -155,22 +158,20 @@ class LTButtonMenuView: UIView {
         return button
     }
     
-    /// 计算给定标题和字体的宽度
-    /// - Parameters:
-    ///   - title: 按钮的标题
-    ///   - font: 字体
-    /// - Returns: 标题的宽度
     func widthForButtonTitle(_ title: String, font: UIFont) -> CGFloat {
         let attributes: [NSAttributedString.Key: Any] = [.font: font]
-        
-//                let attributes: [NSAttributedString.Key: Any] = [
-//                    .font: font,
-//                    .underlineStyle: NSUnderlineStyle.Element().rawValue,
-//                ]
         
         let titleSize = (title as NSString).size(withAttributes: attributes)
         // 添加适当的内边距
         return titleSize.width + 20
+    }
+    
+    func heightForButtonTitle(_ title: String, font: UIFont) -> CGFloat {
+        let attributes: [NSAttributedString.Key: Any] = [.font: font]
+        
+        let titleSize = (title as NSString).size(withAttributes: attributes)
+        // 添加适当的顶部和底部内边距
+        return titleSize.height + 10  // 例如，上下各增加 5 点的间距
     }
     
     private func layoutButtons() {
@@ -207,7 +208,6 @@ class LTButtonMenuView: UIView {
             // 更新 previousButton 以便下一个循环使用
             previousButton = button
             
-//            print("btnFrame:\(button.frame.origin)")
         }
         
         // 为滚动视图的内容设置适当的结束约束
@@ -239,7 +239,7 @@ class LTButtonMenuView: UIView {
             if showButtonShadow {
                 button.layer.shadowColor = UIColor.black.cgColor
                 button.layer.shadowOffset = CGSize(width: 2, height: 2)
-                button.layer.shadowRadius = 3
+                button.layer.shadowRadius = 1
                 button.layer.shadowOpacity = 0.5
             } else {
                 button.layer.shadowOpacity = 0
@@ -258,7 +258,7 @@ class LTButtonMenuView: UIView {
         // 确保按钮在 scrollView 中可见
         scrollToButton(button: sender)
         
-        buttonMenuDelegate?.buttonTapped(btnIdx: sender.tag)
+        delegate?.buttonTapped(btnIdx: sender.tag)
     }
     
     private func scrollToButton(button: UIButton) {
